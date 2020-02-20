@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HollowKnight 地圖導航</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google 字體 -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700,900&display=swap&subset=chinese-traditional"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="titleBox">
+        <a href="index.html"><img class="title" src="assets/img/hollowKnightTitle.png" alt="HollowKnight"></a>
+    </div>
+
+    <section class="container">
+        <div class="box">
+            <p>找不到地圖師很煩心嗎?</p>
+            <p>覺得遊戲前期標籤不夠用?</p>
+            <p>又想要標記起來自己探勘?</p>
+
+            <ol>
+                <li>選擇圖案</li>
+            </ol>
+
+            <p>點擊地圖新增來標記吧!!</p>
+            <ul class="markGroup">
+                <li class="mark" data-value="00"><a href="#"><img class="markImg" src="assets/img/mapMark00.png"
+                            alt=""></a></li>
+                <li class="mark" data-value="01"><a href="#"><img class="markImg" src="assets/img/mapMark01.png"
+                            alt=""></a></li>
+                <li class="mark" data-value="02"><a href="#"><img class="markImg" src="assets/img/mapMark02.png"
+                            alt=""></a></li>
+                <li class="mark" data-value="03"><a href="#"><img class="markImg" src="assets/img/mapMark03.png"
+                            alt=""></a></li>
+            </ul>
+        </div>
+
+        <div class="attention">
+            <p>注意1：網頁重新整理會消除標記</p>
+            <p>注意2：變更地圖會消除標記</p>
+        </div>
+
+        <div class="map">
+            <select name="" id="mapSelect">
+                <option value="1">德特茅斯</option>
+                <option value="2" selected="selected">遺忘十字路</option>
+                <option value="3">蒼綠之徑</option>
+                <option value="4">水晶山峰</option>
+                <option value="5">呼嘯懸崖</option>
+                <option value="6">皇后花園</option>
+                <option value="7">霧之峽谷</option>
+                <option value="8">真菌荒地</option>
+                <option value="9">深邃巢穴</option>
+                <option value="10">淚水之城</option>
+                <option value="11">皇家水道</option>
+                <option value="12">古老盆地</option>
+                <option value="13">安息之地</option>
+                <option value="14">王國邊境</option>
+                <option value="15">蜂巢</option>
+            </select>
+            <!-- 標記畫布 -->
+            <canvas id="canvas" width="1280" height="720"></canvas>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright © 2020 <a href="mailto:huazhi0830@gmail.com">Huazhi</a> All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/canvas.js"></script>
+
+</body>
+
+</html>

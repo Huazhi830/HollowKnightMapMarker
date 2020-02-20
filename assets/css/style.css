@@ -1,0 +1,107 @@
+body {
+    background: url("img/background.png") no-repeat center fixed;
+    background-size: cover;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 0 auto;
+}
+
+select {
+    font-size: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 30px;
+    background-color: #222E3B;
+    width: 100%;
+    text-align: center;
+}
+
+p {
+    color: #FFFFFF;
+}
+
+ol {
+    color: #FFFFFF;
+    text-align: left;
+}
+
+footer p {
+    font-size: 0.5rem;
+}
+
+footer a {
+    color: #ffd95e;
+    text-decoration: none;
+}
+
+.titleBox {
+    position: fixed;
+    top: 0;
+    height: 122px;
+    width: 100%;
+}
+
+.title {
+    width: 224px;
+    height: 82px;
+    padding: 40px 0 0 50px;
+}
+
+.container {
+    width: 1540px;
+    position: relative;
+    margin: 140px auto 0 auto;
+}
+
+.box {
+    text-align: center;
+    background-color: #0B1014;
+    width: 230px;
+    height: 290px;
+    box-shadow: 3px 3px 6px black;
+    position: absolute;
+}
+
+.box p:first-child {
+    padding-top: 8px;
+}
+
+.markGroup {
+    padding: 0;
+    margin: 0;
+}
+
+.mark {
+    display: inline-block;
+}
+
+.markImg {
+    height: 45px;
+    width: 45px;
+}
+
+.attention {
+    border: 5px solid #FFDE58;
+    width: 230px;
+    position: absolute;
+    margin-top: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.map {
+    margin-left: 260px;
+}
+
+#mapSelect {
+    margin-bottom: 5px;
+    width: 200px;
+}
+
+#canvas {
+    width: 100%;
+}
